@@ -17,3 +17,4 @@ set( Sources
 add_library(${PROJECT_NAME} STATIC ${Sources} ${Headers} )
 
 add_subdirectory(tests)
+add_subdirectory(examples)
