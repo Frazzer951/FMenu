@@ -16,7 +16,7 @@ set( Sources
 
 include_directories(include)
 
-add_library(${PROJECT_NAME} STATIC ${Sources} ${Headers} )
+add_library(${PROJECT_NAME} SHARED ${Sources} ${Headers} )
 
 add_subdirectory(tests)
 add_subdirectory(examples)
