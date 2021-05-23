@@ -16,7 +16,10 @@ set( Sources
 
 include_directories(include)
 
-add_library(${PROJECT_NAME} SHARED ${Sources} ${Headers} )
+add_library(${PROJECT_NAME} STATIC ${Sources} ${Headers} )
+
+install(TARGETS ${PROJECT_NAME} DESTINATION lib)
+install(FILES ${Headers} DESTINATION include)
 
 add_subdirectory(tests)
 add_subdirectory(examples)
