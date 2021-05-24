@@ -4,6 +4,8 @@ project(Example)
 
 set(CMAKE_CXX_STANDARD 17)
 
+include(ClangFormat)
+
 set( Sources
     example.cpp
 )
@@ -12,3 +14,5 @@ include_directories(../src)
 
 add_executable(${PROJECT_NAME} ${Sources})
 target_link_libraries(${PROJECT_NAME} FMenu)
+
+target_clangformat_setup(${PROJECT_NAME})
