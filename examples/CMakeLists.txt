@@ -10,8 +10,6 @@ set( Sources
     example.cpp
 )
 
-include_directories(../src)
-
 add_executable(${PROJECT_NAME} ${Sources})
 target_link_libraries(${PROJECT_NAME} FMenu)
 

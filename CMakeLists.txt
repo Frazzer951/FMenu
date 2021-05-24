@@ -10,11 +10,13 @@ enable_testing()
 
 # Add all files from src/ folder
 set( Headers
-  src/FMenu.hpp
+  include/FMenu.hpp
 )
 set( Sources
   src/FMenu.cpp
 )
+
+include_directories(include)
 
 add_library(${PROJECT_NAME} STATIC ${Sources} ${Headers} )
 
